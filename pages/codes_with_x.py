@@ -1,8 +1,9 @@
 import streamlit as st
 import pandas as pd
 from pymongo import MongoClient, DESCENDING
-remoteclient = MongoClient()
-collection = remoteclient.tga.data2
+
+remoteclient = MongoClient(st.secrets["MONGODB"])
+collection = remoteclient.tga.data3
 
 st.set_page_config(layout="wide")
 
