@@ -8,7 +8,7 @@ collection = remoteclient.tga.data3
 
 st.set_page_config(layout="wide")
 
-st.title("hi")
+st.title("TGA packages by latest release")
 
 
 
