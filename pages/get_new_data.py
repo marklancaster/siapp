@@ -22,11 +22,12 @@ async def fetch_training_packages():
             if training_package.releases == tp.releases:
                 st.write(f"{code} up to date")
             else:
-                st.write(f"{code} needs updating, will do that afterwards")
+                st.write(f"{code} needs updating, however, this has not been implemented yet. Sorry.")
                 tps.append(tp)
     return tps
 
 st.title("Check for new Data")
+st.write("Please wait while we check for new data...")
 
 
 
