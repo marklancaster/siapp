@@ -874,15 +874,6 @@ wheels = [
 ]
 
 [[package]]
-name = "pyperclip"
-version = "1.10.0"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/15/99/25f4898cf420efb6f45f519de018f4faea5391114a8618b16736ef3029f1/pyperclip-1.10.0.tar.gz", hash = "sha256:180c8346b1186921c75dfd14d9048a6b5d46bfc499778811952c6dd6eb1ca6be", size = 12193, upload-time = "2025-09-18T00:54:00.384Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/1e/bc/22540e73c5f5ae18f02924cd3954a6c9a4aa6b713c841a94c98335d333a1/pyperclip-1.10.0-py3-none-any.whl", hash = "sha256:596fbe55dc59263bff26e61d2afbe10223e2fccb5210c9c96a28d6887cfcc7ec", size = 11062, upload-time = "2025-09-18T00:53:59.252Z" },
-]
-
-[[package]]
 name = "python-dateutil"
 version = "2.9.0.post0"
 source = { registry = "https://pypi.org/simple" }
@@ -1076,7 +1067,6 @@ dependencies = [
     { name = "pandas" },
     { name = "pydantic" },
     { name = "pymongo" },
-    { name = "pyperclip" },
     { name = "requests" },
     { name = "streamlit" },
 ]
@@ -1087,7 +1077,6 @@ requires-dist = [
     { name = "pandas", specifier = ">=2.3.2" },
     { name = "pydantic", specifier = ">=2.11.9" },
     { name = "pymongo", specifier = ">=4.15.1" },
-    { name = "pyperclip", specifier = ">=1.10.0" },
     { name = "requests", specifier = ">=2.32.5" },
     { name = "streamlit", specifier = ">=1.50.0" },
 ]
