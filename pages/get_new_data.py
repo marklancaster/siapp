@@ -13,6 +13,7 @@ async def fetch_training_packages():
     tps = []
     mongodbclient = AsyncMongoClient(MONGODB_CONNECTION_STRING)
     await init_beanie(database=mongodbclient.tga, document_models=[TrainingPackage])
+    TRAINING_PACKAGES.sort()
     for code in TRAINING_PACKAGES:
         url = BASE_URL + code
         r = requests.get(url)
