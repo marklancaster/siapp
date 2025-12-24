@@ -20,7 +20,7 @@ async def fetch_training_packages():
         r = requests.get(url)
         if r.status_code == 200:
             tp = TrainingPackage(**r.json())
-            st.write(f"Downloaded data for {tp.code}")
+            st.write(f"Retreived data for: {tp.code}")
             tps.append(r.json())
             # training_package = await TrainingPackage.find_one(TrainingPackage.code == code)
             # if training_package.releases == tp.releases:
